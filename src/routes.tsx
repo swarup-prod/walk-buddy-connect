@@ -11,6 +11,7 @@ import ProfilePage from './pages/ProfilePage';
 import WalkSchedulePage from './pages/WalkSchedulePage';
 import NotFoundPage from './pages/NotFoundPage';
 import PolicyPage from './pages/PolicyPage';
+import SplashScreen from './pages/SplashScreen';
 
 // For demo purposes, we're not implementing actual authentication checks
 // In a real app, you would check if the user is authenticated
@@ -32,6 +33,10 @@ const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
 const routes: RouteObject[] = [
   {
     path: '/',
+    element: <SplashScreen />,
+  },
+  {
+    path: '/home',
     element: (
       <ProtectedRoute>
         <HomePage />

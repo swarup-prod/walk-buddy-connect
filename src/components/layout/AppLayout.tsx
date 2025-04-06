@@ -2,8 +2,7 @@
 import React from 'react';
 import FloatingNavBar from './FloatingNavBar';
 
-// Import icons from Material UI icons
-// Note: We're using lucide-react icons as placeholders since we don't have Material UI icons installed
+// Import icons from lucide-react
 import { Home, Users, Calendar, MessageSquare, User } from 'lucide-react';
 
 type AppLayoutProps = {
@@ -59,8 +58,10 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children, gradient = 'purple' }) 
         {children}
       </main>
       
-      {/* Floating Bottom Navigation */}
-      <FloatingNavBar items={navItems} />
+      {/* Floating Bottom Navigation - Now consistent across all pages */}
+      <div className="fixed bottom-4 left-0 right-0 z-50 flex justify-center">
+        <FloatingNavBar items={navItems} />
+      </div>
     </div>
   );
 };

@@ -34,10 +34,15 @@ const HomePage: React.FC = () => {
           </div>
         </div>
         
-        {/* Welcome Header */}
+        {/* Welcome Header with Logo */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-foreground">Buddy Walk</h1>
-          <p className="text-xl font-medium text-muted-foreground mt-1">Find your perfect walking partner</p>
+          <div className="flex justify-center">
+            <img 
+              src="/lovable-uploads/dec1c73f-0865-4496-bd1c-014aadd16f33.png" 
+              alt="Buddy Walk Logo" 
+              className="w-40 h-40 object-contain"
+            />
+          </div>
         </div>
 
         {/* Welcome Card with User Profile */}
