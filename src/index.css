@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,26 +16,26 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
     
-    --primary: 142 71% 45%;
-    --primary-foreground: 142 100% 98%;
+    --primary: 252 83% 68%;
+    --primary-foreground: 252 83% 98%;
     
-    --secondary: 196 100% 40%;
-    --secondary-foreground: 196 100% 98%;
+    --secondary: 199 89% 48%;
+    --secondary-foreground: 199 89% 98%;
     
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     
-    --accent: 36 100% 57%;
-    --accent-foreground: 36 100% 12%;
+    --accent: 262 83% 82%;
+    --accent-foreground: 262 83% 20%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 142 71% 45%;
+    --ring: 252 83% 68%;
     
-    --radius: 0.75rem;
+    --radius: 1rem;
   }
 }
 
@@ -45,6 +47,34 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(135deg, rgba(180, 160, 255, 0.6) 0%, rgba(230, 210, 255, 0.4) 100%);
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(135deg, rgba(145, 215, 255, 0.6) 0%, rgba(210, 235, 255, 0.4) 100%);
+}
+
+.bg-gradient-cream {
+  background: linear-gradient(135deg, rgba(255, 250, 240, 0.8) 0%, rgba(252, 245, 235, 0.6) 100%);
+}
+
+.bg-gradient-blend {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.9) 0%, rgba(240, 230, 255, 0.8) 100%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-pill {
+  background: rgba(240, 240, 245, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Custom animations */

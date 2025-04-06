@@ -1,6 +1,6 @@
 
 import React from 'react';
-import MobileLayout from '@/components/layout/MobileLayout';
+import AppLayout from '@/components/layout/AppLayout';
 import WalkScheduler from '@/components/walks/WalkScheduler';
 import { useNavigate } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
@@ -10,25 +10,27 @@ const WalkSchedulePage: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <MobileLayout>
-      <div className="p-4">
+    <AppLayout gradient="blend">
+      <div className="p-6">
         <div className="flex items-center mb-6">
           <Button 
             variant="ghost" 
             size="icon" 
-            className="mr-2"
+            className="mr-2 rounded-full"
             onClick={() => navigate(-1)}
           >
             <ChevronLeft />
           </Button>
-          <h1 className="text-xl font-bold">Schedule a Walk</h1>
+          <h1 className="text-2xl font-bold">Schedule a Walk</h1>
         </div>
         
-        <div className="flex justify-center">
-          <WalkScheduler />
+        <div className="mt-4">
+          <Card className="glass-card p-6 shadow-card">
+            <WalkScheduler />
+          </Card>
         </div>
       </div>
-    </MobileLayout>
+    </AppLayout>
   );
 };
 

@@ -68,7 +68,7 @@ export default {
         'card': '0 8px 24px -4px rgba(0, 0, 0, 0.08)',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['SF Pro Display', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         'accordion-down': {

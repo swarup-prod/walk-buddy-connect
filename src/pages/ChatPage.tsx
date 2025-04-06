@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import AppLayout from '@/components/layout/AppLayout';
 import ChatInterface from '@/components/chat/ChatInterface';
 
 // Mock data - would come from API in real app
@@ -18,11 +19,13 @@ const ChatPage: React.FC = () => {
     : { id: '0', name: 'Unknown Buddy', avatar: '' };
 
   return (
-    <ChatInterface 
-      buddyId={buddy.id} 
-      buddyName={buddy.name} 
-      buddyAvatar={buddy.avatar}
-    />
+    <AppLayout gradient="blue">
+      <ChatInterface 
+        buddyId={buddy.id} 
+        buddyName={buddy.name} 
+        buddyAvatar={buddy.avatar}
+      />
+    </AppLayout>
   );
 };
 
