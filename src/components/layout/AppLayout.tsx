@@ -16,7 +16,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children, gradient = 'purple' }) 
       icon: <Home className="w-5 h-5" />, 
       activeIcon: <Home className="w-5 h-5 fill-primary" />,
       label: 'Home', 
-      path: '/' 
+      path: '/home' 
     },
     { 
       icon: <Users className="w-5 h-5" />, 
